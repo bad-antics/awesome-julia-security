@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐 Awesome Julia Security
+# �� Awesome Julia Security
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Julia](https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white)](https://julialang.org/)
@@ -20,6 +20,8 @@
 - [Cryptography](#cryptography)
 - [Network Security](#network-security)
 - [Forensics](#forensics)
+- [Credential Management](#credential-management)
+- [Hash Analysis](#hash-analysis)
 - [Vulnerability Research](#vulnerability-research)
 - [Machine Learning Security](#machine-learning-security)
 - [Threat Intelligence](#threat-intelligence)
@@ -36,24 +38,49 @@
 
 *Cryptographic primitives, protocols, and analysis tools.*
 
-- [Nettle.jl](https://github.com/JuliaCrypto/Nettle.jl) - Julia wrapper for libnettle cryptographic library.
-- [SHA.jl](https://github.com/JuliaCrypto/SHA.jl) - Performant, 100% native-Julia SHA-1, SHA-2, and SHA-3 implementation.
-- [MD5.jl](https://github.com/JuliaCrypto/MD5.jl) - MD5 hash implementation in pure Julia.
-- [MbedTLS.jl](https://github.com/JuliaLang/MbedTLS.jl) - Wrapper around mbedtls for cryptographic operations.
-- [Crypto.jl](https://github.com/danielsuo/Crypto.jl) - Julia cryptography library.
-- [SEAL.jl](https://github.com/JuliaCrypto/SEAL.jl) - Homomorphic encryption using Microsoft SEAL.
-- [ECC.jl](https://github.com/JuliaMath/ECC.jl) - Elliptic Curve Cryptography in Julia.
-- [**Spectra**](https://github.com/bad-antics/spectra) ⭐ - High-performance security toolkit with SHA3-256, ChaCha20-Poly1305, and entropy analysis. 8,000+ lines.
+### Core Libraries
+- [SHA.jl](https://github.com/JuliaCrypto/SHA.jl) ⭐50 - Performant, 100% native-Julia SHA-1, SHA-2, and SHA-3 implementation.
+- [MD5.jl](https://github.com/JuliaCrypto/MD5.jl) ⭐20 - MD5 hash implementation in pure Julia.
+- [Nettle.jl](https://github.com/JuliaCrypto/Nettle.jl) ⭐55 - Julia wrapper for libnettle (MD5, SHA, HMAC, AES).
+- [MbedTLS.jl](https://github.com/JuliaLang/MbedTLS.jl) ⭐41 - Wrapper around mbedtls for TLS/SSL and crypto.
+
+### Encryption & Ciphers
+- [AES.jl](https://github.com/kanav99/AES.jl) ⭐12 - AES encryption On-the-Fly mode implementation.
+- [ChaChaCiphers.jl](https://github.com/kernelmethod/ChaChaCiphers.jl) ⭐3 - GPU-compatible ChaCha stream cipher implementations.
+- [Sodium.jl](https://github.com/amitmurthy/Sodium.jl) ⭐6 - Julia wrapper for libsodium (NaCl).
+
+### Elliptic Curves & Signatures
+- [ECC.jl](https://github.com/roshii/ECC.jl) ⭐6 - Elliptic Curve Cryptography (secp256k1).
+- [CryptoSignatures.jl](https://github.com/PeaceFounder/CryptoSignatures.jl) ⭐9 - Cryptographic signature library.
+- [CryptoGroups.jl](https://github.com/PeaceFounder/CryptoGroups.jl) ⭐6 - Groups for cryptographic applications.
+
+### Advanced Cryptography
+- [ToyFHE.jl](https://github.com/JuliaCrypto/ToyFHE.jl) ⭐95 - Toy implementation of Fully Homomorphic Encryption.
+- [NistyPQC.jl](https://github.com/erich-9/NistyPQC.jl) ⭐8 - Post-Quantum Cryptography for Julia.
+- [Bcrypt.jl](https://github.com/2HgO/Bcrypt.jl) ⭐2 - bcrypt adaptive hashing algorithm.
+- [CryptographicHashFunctions.jl](https://github.com/erich-9/CryptographicHashFunctions.jl) ⭐2 - Fast cryptographic hash functions.
+
+### Utilities
+- [CryptoUtils.jl](https://github.com/fcasal/CryptoUtils.jl) ⭐5 - Cryptography and number-theory primitives.
+- [**Spectra**](https://github.com/bad-antics/spectra) ⭐ - High-performance security toolkit with SHA3-256, ChaCha20-Poly1305, and entropy analysis.
 
 ## Network Security
 
-*Network analysis, packet capture, and protocol tools.*
+*Network analysis, port scanning, and protocol tools.*
 
+### Scanning & Reconnaissance
+- [**NetProbe**](https://github.com/bad-antics/netprobe) 🆕 - Network reconnaissance and port scanning toolkit with service detection and CIDR support.
+- [**Spectra**](https://github.com/bad-antics/spectra) ⭐ - Network forensics with PCAP analysis and protocol dissection.
+
+### Core Networking
 - [Sockets.jl](https://github.com/JuliaLang/julia/blob/master/stdlib/Sockets/src/Sockets.jl) - Standard library for network socket programming.
 - [HTTP.jl](https://github.com/JuliaWeb/HTTP.jl) - HTTP client and server functionality.
-- [LibPQ.jl](https://github.com/invenia/LibPQ.jl) - PostgreSQL client library.
 - [DNS.jl](https://github.com/JuliaWeb/DNS.jl) - DNS client for Julia.
-- [**Spectra**](https://github.com/bad-antics/spectra) ⭐ - Network forensics with PCAP analysis and protocol dissection.
+- [GnuTLS.jl](https://github.com/JuliaWeb/GnuTLS.jl) ⭐8 - Transport Level Security via GnuTLS.
+
+### Protocols
+- [LibSSH2.jl](https://github.com/JuliaWeb/LibSSH2.jl) - SSH2 protocol implementation.
+- [LibPQ.jl](https://github.com/invenia/LibPQ.jl) - PostgreSQL client library.
 
 ## Forensics
 
@@ -63,11 +90,27 @@
 - [Mmap.jl](https://docs.julialang.org/en/v1/stdlib/Mmap/) - Memory-mapped file access.
 - [**Spectra**](https://github.com/bad-antics/spectra) ⭐ - Memory forensics, process analysis, and artifact extraction.
 
+## Credential Management
+
+*Secure credential storage and password utilities.*
+
+- [**SecureVault**](https://github.com/bad-antics/securevault) 🆕 - Encrypted credential vault with PBKDF2 key derivation, secure memory wiping, and audit logging.
+- [Bcrypt.jl](https://github.com/2HgO/Bcrypt.jl) ⭐2 - Bcrypt password hashing.
+
+## Hash Analysis
+
+*Hash identification, cracking, and analysis tools.*
+
+- [**HashForensics**](https://github.com/bad-antics/hashforensics) 🆕 - Hash identification, analysis and cracking toolkit with 40+ algorithm support.
+- [SHA.jl](https://github.com/JuliaCrypto/SHA.jl) ⭐50 - Native SHA implementations for hash generation.
+- [MD5.jl](https://github.com/JuliaCrypto/MD5.jl) ⭐20 - MD5 implementation for legacy hash support.
+
 ## Vulnerability Research
 
 *Vulnerability discovery and analysis tools.*
 
-- [**Oracle**](https://github.com/bad-antics/oracle) ⭐ - AI-powered vulnerability prediction with 87% accuracy. GNN-based pattern recognition, CVE trend analysis. 11,389 lines.
+- [**Oracle**](https://github.com/bad-antics/oracle) ⭐ - AI-powered vulnerability prediction with 87% accuracy. GNN-based pattern recognition, CVE trend analysis.
+- [JuliaLang/SecurityAdvisories.jl](https://github.com/JuliaLang/SecurityAdvisories.jl) ⭐17 - The Julia Security Advisory Database.
 
 ## Machine Learning Security
 
@@ -76,20 +119,23 @@
 - [Flux.jl](https://github.com/FluxML/Flux.jl) - Machine learning stack for Julia.
 - [MLJ.jl](https://github.com/alan-turing-institute/MLJ.jl) - Machine learning framework.
 - [Knet.jl](https://github.com/denizyuret/Knet.jl) - Deep learning framework.
-- [**Mirage**](https://github.com/bad-antics/mirage) ⭐ - Adversarial ML framework with FGSM, PGD, C&W attacks, model extraction, and robustness testing. 7,000+ lines.
+- [**Mirage**](https://github.com/bad-antics/mirage) ⭐ - Adversarial ML framework with FGSM, PGD, C&W attacks, model extraction, and robustness testing.
 - [**Oracle**](https://github.com/bad-antics/oracle) ⭐ - ML-based vulnerability prediction using graph neural networks.
+- [MKTFHE](https://github.com/SNUCP/MKTFHE) ⭐18 - Multi-Key TFHE implementation for secure computation.
 
 ## Threat Intelligence
 
 *Threat feeds, IOC management, and intelligence platforms.*
 
-- [**Vortex**](https://github.com/bad-antics/vortex) ⭐ - Threat intelligence fusion platform. 50+ feeds, ML correlation, MITRE ATT&CK mapping, STIX/TAXII support. 8,406 lines.
+- [**Vortex**](https://github.com/bad-antics/vortex) ⭐ - Threat intelligence fusion platform. 50+ feeds, ML correlation, MITRE ATT&CK mapping, STIX/TAXII support.
 
 ## Privacy & Anonymity
 
 *Privacy-preserving technologies and anonymous communication.*
 
-- [**Phantom**](https://github.com/bad-antics/phantom) ⭐ - Zero-knowledge proofs for anonymous vulnerability disclosure. zk-SNARKs implementation. 6,302 lines.
+- [**Phantom**](https://github.com/bad-antics/phantom) ⭐ - Zero-knowledge proofs for anonymous vulnerability disclosure. zk-SNARKs implementation.
+- [PeaceFounder.jl](https://github.com/PeaceFounder/PeaceFounder.jl) ⭐19 - E2E verifiable evoting via pseudonym braiding.
+- [ElectionGuardVerifier.jl](https://github.com/mitre/ElectionGuardVerifier.jl) ⭐8 - MITRE Election Guard verification.
 
 ## Binary Analysis
 
@@ -120,11 +166,16 @@
 
 *Comprehensive security toolkits and frameworks.*
 
-- [**Spectra**](https://github.com/bad-antics/spectra) ⭐ - High-performance cryptography, network, and forensics toolkit. NullSec ecosystem integration.
-- [**Oracle**](https://github.com/bad-antics/oracle) ⭐ - AI vulnerability prediction framework with NVD/MITRE integration.
-- [**Phantom**](https://github.com/bad-antics/phantom) ⭐ - Zero-knowledge proof framework for security research.
-- [**Vortex**](https://github.com/bad-antics/vortex) ⭐ - Threat intelligence platform with ML correlation.
-- [**Mirage**](https://github.com/bad-antics/mirage) ⭐ - Adversarial machine learning framework.
+| Package | Description | Lines |
+|---------|-------------|-------|
+| [**Spectra**](https://github.com/bad-antics/spectra) | High-performance cryptography, network, and forensics toolkit | 8,000+ |
+| [**Oracle**](https://github.com/bad-antics/oracle) | AI vulnerability prediction with NVD/MITRE integration | 11,389 |
+| [**Phantom**](https://github.com/bad-antics/phantom) | Zero-knowledge proof framework | 6,302 |
+| [**Vortex**](https://github.com/bad-antics/vortex) | Threat intelligence platform with ML correlation | 8,406 |
+| [**Mirage**](https://github.com/bad-antics/mirage) | Adversarial machine learning framework | 7,000+ |
+| [**SecureVault**](https://github.com/bad-antics/securevault) 🆕 | Encrypted credential storage | 700+ |
+| [**HashForensics**](https://github.com/bad-antics/hashforensics) 🆕 | Hash identification and cracking | 900+ |
+| [**NetProbe**](https://github.com/bad-antics/netprobe) 🆕 | Network reconnaissance toolkit | 900+ |
 
 ## Learning Resources
 
