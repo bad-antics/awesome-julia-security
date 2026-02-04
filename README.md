@@ -1,201 +1,89 @@
-<!--
-SEO Keywords: Julia security, Julia cryptography, Julia hacking, Julia pentesting,
-Julia forensics, Julia network security, Julia adversarial ML, Julia vulnerability research,
-Julia blockchain, Julia web3, Julia quantum cryptography, Julia post-quantum,
-JuliaCrypto, awesome list, security tools, Julia packages, bad-antics
--->
-
 <div align="center">
 
 ```
-╔═══════════════════════════════════════════════════════════════╗
-║  AWESOME JULIA SECURITY  ·  Curated Security Packages         ║
-╚═══════════════════════════════════════════════════════════════╝
+     ██╗██╗   ██╗██╗     ██╗ █████╗     ███████╗███████╗ ██████╗
+     ██║██║   ██║██║     ██║██╔══██╗    ██╔════╝██╔════╝██╔════╝
+     ██║██║   ██║██║     ██║███████║    ███████╗█████╗  ██║     
+██   ██║██║   ██║██║     ██║██╔══██║    ╚════██║██╔══╝  ██║     
+╚█████╔╝╚██████╔╝███████╗██║██║  ██║    ███████║███████╗╚██████╗
+ ╚════╝  ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═╝    ╚══════╝╚══════╝ ╚═════╝
+        [ AWESOME JULIA SECURITY | bad-antics ]
 ```
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-[![GitHub stars](https://img.shields.io/github/stars/bad-antics/awesome-julia-security?style=flat-square&logo=github)](https://github.com/bad-antics/awesome-julia-security/stargazers)
-[![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+[![Julia](https://img.shields.io/badge/Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)](https://julialang.org)
+[![Security](https://img.shields.io/badge/Security-FF0000?style=for-the-badge&logo=hackthebox&logoColor=white)](https://github.com/bad-antics)
+[![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
 
-**A curated list of Julia packages for security research, cryptography, forensics, adversarial ML, and more.**
-
-*Julia combines Python-like readability with C-like performance — ideal for security tools.*
-
-[Submit Package](https://github.com/bad-antics/awesome-julia-security/issues/new) • [Report Broken Link](https://github.com/bad-antics/awesome-julia-security/issues) • [Contribute](#contributing)
+**Curated security tools, libraries & resources for Julia**
 
 </div>
 
 ---
 
-## Contents
-
-- [Cryptography](#cryptography) — Core, encryption, elliptic curves, PQC
-- [Quantum Computing](#quantum-computing--cryptography) — Frameworks, post-quantum
-- [Network Security](#network-security) — Packets, protocols, TLS
-- [Binary Analysis](#binary-analysis) — RE, ELF, DWARF
-- [Forensics](#forensics) — Digital forensics, IR
-- [Machine Learning Security](#machine-learning-security) — Adversarial ML
-- [Blockchain & Web3](#blockchain--web3) — Crypto, smart contracts
-- [Web Security](#web-security) — HTTP, HTML parsing
-- [Fuzzing](#fuzzing) — Property-based testing
-- [Learning Resources](#learning-resources) — Books, docs, communities
-
----
-
-## Cryptography
-
-### Core Libraries
+## 🔐 Cryptography
 
 | Package | Description |
 |---------|-------------|
-| [SHA.jl](https://github.com/JuliaCrypto/SHA.jl) | 100% native SHA-1, SHA-2, SHA-3 |
-| [MD5.jl](https://github.com/JuliaCrypto/MD5.jl) | Pure Julia MD5 |
-| [Nettle.jl](https://github.com/JuliaCrypto/Nettle.jl) | libnettle wrapper (AES, HMAC) |
-| [MbedTLS.jl](https://github.com/JuliaLang/MbedTLS.jl) | TLS/SSL + crypto |
+| [Nettle.jl](https://github.com/JuliaCrypto/Nettle.jl) | Libnettle crypto bindings |
+| [SHA.jl](https://github.com/JuliaCrypto/SHA.jl) | SHA hash functions |
+| [MD5.jl](https://github.com/JuliaCrypto/MD5.jl) | MD5 hashing |
+| [MbedTLS.jl](https://github.com/JuliaLang/MbedTLS.jl) | TLS/SSL implementation |
 
-### Encryption
-
-| Package | Description |
-|---------|-------------|
-| [AES.jl](https://github.com/kanav99/AES.jl) | AES On-the-Fly mode |
-| [ChaChaCiphers.jl](https://github.com/kernelmethod/ChaChaCiphers.jl) | GPU-compatible ChaCha |
-| [Sodium.jl](https://github.com/amitmurthy/Sodium.jl) | libsodium (NaCl) wrapper |
-
-### Elliptic Curves
-
-| Package | Description |
-|---------|-------------|
-| [ECC.jl](https://github.com/roshii/ECC.jl) | secp256k1 |
-| [CryptoSignatures.jl](https://github.com/PeaceFounder/CryptoSignatures.jl) | Signature schemes |
-| [CryptoGroups.jl](https://github.com/PeaceFounder/CryptoGroups.jl) | Crypto groups |
-
-### Advanced / Post-Quantum
-
-| Package | Description |
-|---------|-------------|
-| [ToyFHE.jl](https://github.com/JuliaCrypto/ToyFHE.jl) | Fully Homomorphic Encryption |
-| [NistyPQC.jl](https://github.com/erich-9/NistyPQC.jl) | NIST PQC candidates |
-| [Bcrypt.jl](https://github.com/2HgO/Bcrypt.jl) | bcrypt hashing |
-
----
-
-## Quantum Computing & Cryptography
-
-| Package | Description |
-|---------|-------------|
-| [Yao.jl](https://github.com/QuantumBFS/Yao.jl) | Extensible quantum circuits |
-| [QuantumInformation.jl](https://github.com/iitis/QuantumInformation.jl) | QI toolkit |
-| [QuantumOptics.jl](https://github.com/qojulia/QuantumOptics.jl) | Quantum system simulation |
-| [ITensors.jl](https://github.com/ITensor/ITensors.jl) | Tensor networks |
-
----
-
-## Network Security
-
-### Packet Analysis
-
-| Package | Description |
-|---------|-------------|
-| [Pcap.jl](https://github.com/JuliaIO/Pcap.jl) | libpcap bindings |
-| [PacketIO.jl](https://github.com/JuliaPackets/PacketIO.jl) | PCAP read/write |
-
-### Protocols
+## 🌐 Network Security
 
 | Package | Description |
 |---------|-------------|
 | [HTTP.jl](https://github.com/JuliaWeb/HTTP.jl) | HTTP client/server |
-| [SSH.jl](https://github.com/JuliaCloud/SSH.jl) | SSH protocol |
-| [OpenSSL.jl](https://github.com/JuliaWeb/OpenSSL.jl) | OpenSSL bindings |
+| [Sockets.jl](https://docs.julialang.org/en/v1/stdlib/Sockets/) | Low-level networking |
+| [LibSSH2.jl](https://github.com/JuliaCloud/LibSSH2.jl) | SSH protocol |
 
----
-
-## Binary Analysis
+## 🔬 Binary Analysis
 
 | Package | Description |
 |---------|-------------|
-| [ReadELF.jl](https://github.com/JuliaIO/ReadELF.jl) | ELF parser |
-| [ObjectFile.jl](https://github.com/JuliaIO/ObjectFile.jl) | Object file handling |
-| [DWARF.jl](https://github.com/Keno/DWARF.jl) | Debug info parser |
-| [LibBFD.jl](https://github.com/Keno/LibBFD.jl) | GNU BFD bindings |
+| [DWARF.jl](https://github.com/JuliaDebug/DWARF.jl) | Debug info parsing |
+| [ELF.jl](https://github.com/JuliaInterop/ELF.jl) | ELF binary parsing |
+| [MachO.jl](https://github.com/JuliaInterop/MachO.jl) | Mach-O parsing |
 
----
-
-## Forensics
+## 📊 Data & Forensics
 
 | Package | Description |
 |---------|-------------|
-| [FileIO.jl](https://github.com/JuliaIO/FileIO.jl) | Universal file formats |
-| [Images.jl](https://github.com/JuliaImages/Images.jl) | Steganography detection |
-| [ZipFile.jl](https://github.com/fhs/ZipFile.jl) | ZIP analysis |
+| [CSV.jl](https://github.com/JuliaData/CSV.jl) | CSV parsing |
+| [JSON3.jl](https://github.com/quinnj/JSON3.jl) | Fast JSON |
+| [DataFrames.jl](https://github.com/JuliaData/DataFrames.jl) | Data analysis |
 
----
-
-## Machine Learning Security
+## 🤖 ML Security
 
 | Package | Description |
 |---------|-------------|
 | [Flux.jl](https://github.com/FluxML/Flux.jl) | ML framework |
-| [Adversarial.jl](https://github.com/jaypmorgan/Adversarial.jl) | Adversarial attacks |
-| [Zygote.jl](https://github.com/FluxML/Zygote.jl) | Autodiff for gradients |
-| [DifferentialPrivacy.jl](https://github.com/OpenMined/DifferentialPrivacy.jl) | DP algorithms |
+| [MLJ.jl](https://github.com/alan-turing-institute/MLJ.jl) | ML toolbox |
+| [Knet.jl](https://github.com/denizyuret/Knet.jl) | Deep learning |
 
 ---
 
-## Blockchain & Web3
+## 🚀 Why Julia for Security?
 
-| Package | Description |
-|---------|-------------|
-| [Bitcoin.jl](https://github.com/JuliaCrypto/Bitcoin.jl) | Bitcoin protocol |
-| [Ethereum.jl](https://github.com/pszufe/Ethereum.jl) | Ethereum interaction |
-| [Secp256k1.jl](https://github.com/JuliaCrypto/Secp256k1.jl) | secp256k1 curves |
-
----
-
-## Web Security
-
-| Package | Description |
-|---------|-------------|
-| [Gumbo.jl](https://github.com/JuliaWeb/Gumbo.jl) | HTML5 parsing |
-| [URIs.jl](https://github.com/JuliaWeb/URIs.jl) | URI handling |
+- **Speed** — Near C performance for heavy computation
+- **Syntax** — Python-like readability
+- **Interop** — Call C/Python/R directly
+- **Parallel** — Built-in distributed computing
+- **Math** — First-class numerical computing
 
 ---
 
-## Fuzzing
+## 📚 Resources
 
-| Package | Description |
-|---------|-------------|
-| [Supposition.jl](https://github.com/Seelengrab/Supposition.jl) | Property-based testing |
-| [PropCheck.jl](https://github.com/Seelengrab/PropCheck.jl) | Property testing |
-
----
-
-## Learning Resources
-
-- [Julia Security Guide](https://docs.julialang.org/en/v1/manual/security/) — Official docs
-- [JuliaCrypto](https://github.com/JuliaCrypto) — Crypto organization
-- [Julia Discourse - Security](https://discourse.julialang.org/c/domain/security)
-
----
-
-## Related Lists
-
-- [Awesome Security](https://github.com/sbilly/awesome-security)
-- [Awesome Cryptography](https://github.com/sobolevn/awesome-cryptography)
-- [Awesome Hacking](https://github.com/carpedm20/awesome-hacking)
-
----
-
-## Contributing
-
-Found a Julia security package? [Open an issue](https://github.com/bad-antics/awesome-julia-security/issues/new) or submit a PR!
+- [Julia Documentation](https://docs.julialang.org)
+- [JuliaCon Security Talks](https://www.youtube.com/c/TheJuliaLanguage)
+- [Julia Discourse - Security](https://discourse.julialang.org)
 
 ---
 
 <div align="center">
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-*Maintained by [bad-antics](https://github.com/bad-antics)*
+**[GitHub](https://github.com/bad-antics)** · **[NullSec](https://github.com/bad-antics/nullsec)**
 
 </div>
