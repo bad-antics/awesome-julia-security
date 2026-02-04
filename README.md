@@ -184,3 +184,72 @@ Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [bad-antics](https://github.com/bad-antics) has waived all copyright and related or neighboring rights to this work.
+
+## Quantum Computing & Cryptography
+
+Quantum computing frameworks and post-quantum cryptography for Julia.
+
+### Quantum Frameworks
+
+- [Yao.jl](https://github.com/QuantumBFS/Yao.jl) - Extensible, efficient quantum computing framework with quantum circuits.
+- [QuantumInformation.jl](https://github.com/iitis/QuantumInformation.jl) - Quantum information theory toolkit.
+- [QuantumOptics.jl](https://github.com/qojulia/QuantumOptics.jl) - Library for simulating quantum systems.
+- [ITensors.jl](https://github.com/ITensor/ITensors.jl) - Tensor network calculations for quantum simulations.
+
+### Post-Quantum Cryptography
+
+- [NistyPQC.jl](https://github.com/erich-9/NistyPQC.jl) - NIST Post-Quantum Cryptography candidates.
+- [Kyber.jl](https://github.com/JuliaCrypto/Kyber.jl) - Kyber lattice-based key encapsulation.
+- [CRYSTALS.jl](https://github.com/JuliaCrypto/CRYSTALS.jl) - CRYSTALS-Dilithium signature scheme.
+
+## Reverse Engineering
+
+Binary analysis and reverse engineering tools.
+
+- [LibBFD.jl](https://github.com/Keno/LibBFD.jl) - GNU BFD library bindings for binary parsing.
+- [ELF.jl](https://github.com/JuliaInterop/ELF.jl) - ELF file format parser.
+- [DWARF.jl](https://github.com/Keno/DWARF.jl) - DWARF debugging information parser.
+- [ObjectFile.jl](https://github.com/JuliaIO/ObjectFile.jl) - Object file format handling.
+- [Cxx.jl](https://github.com/JuliaInterop/Cxx.jl) - C++ interop for interfacing with RE tools.
+
+## AI/ML Security
+
+Machine learning security and adversarial research.
+
+### Adversarial ML
+
+- [Flux.jl](https://github.com/FluxML/Flux.jl) - ML library suitable for adversarial example generation.
+- [Adversarial.jl](https://github.com/jaypmorgan/Adversarial.jl) - Adversarial attack implementations.
+- [DifferentialPrivacy.jl](https://github.com/OpenMined/DifferentialPrivacy.jl) - Differential privacy algorithms.
+
+### Model Security
+
+- [ModelAnalysis.jl](https://github.com/JuliaAI/ModelAnalysis.jl) - ML model interpretation and analysis.
+- [Interpretability.jl](https://github.com/JuliaAI/Interpretability.jl) - Model interpretability tools.
+
+## Blockchain & Web3
+
+Cryptocurrency and blockchain security tools.
+
+- [Bitcoin.jl](https://github.com/JuliaCrypto/Bitcoin.jl) - Bitcoin protocol implementation.
+- [Ethereum.jl](https://github.com/pszufe/Ethereum.jl) - Ethereum interaction library.
+- [Secp256k1.jl](https://github.com/JuliaCrypto/Secp256k1.jl) - secp256k1 elliptic curve operations.
+
+## Simulation & Emulation
+
+Security-focused simulation environments.
+
+- [Agents.jl](https://github.com/JuliaDynamics/Agents.jl) - Agent-based modeling for attack simulation.
+- [DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl) - System dynamics modeling.
+- [StateSpaceModels.jl](https://github.com/LAMPSPUC/StateSpaceModels.jl) - State-space analysis for anomaly detection.
+
+---
+
+## Contributing
+
+Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
+
+## License
+
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
