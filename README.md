@@ -8,19 +8,9 @@ JuliaCrypto, awesome list, security tools, Julia packages, bad-antics
 <div align="center">
 
 ```
-  █████╗ ██╗    ██╗███████╗███████╗ ██████╗ ███╗   ███╗███████╗          ██╗██╗   ██╗██╗     ██╗ █████╗ 
- ██╔══██╗██║    ██║██╔════╝██╔════╝██╔═══██╗████╗ ████║██╔════╝          ██║██║   ██║██║     ██║██╔══██╗
- ███████║██║ █╗ ██║█████╗  ███████╗██║   ██║██╔████╔██║█████╗            ██║██║   ██║██║     ██║███████║
- ██╔══██║██║███╗██║██╔══╝  ╚════██║██║   ██║██║╚██╔╝██║██╔══╝       ██   ██║██║   ██║██║     ██║██╔══██║
- ██║  ██║╚███╔███╔╝███████╗███████║╚██████╔╝██║ ╚═╝ ██║███████╗     ╚█████╔╝╚██████╔╝███████╗██║██║  ██║
- ╚═╝  ╚═╝ ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝      ╚════╝  ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═╝
-               ███████╗███████╗ ██████╗██╗   ██╗██████╗ ██╗████████╗██╗   ██╗
-               ██╔════╝██╔════╝██╔════╝██║   ██║██╔══██╗██║╚══██╔══╝╚██╗ ██╔╝
-               ███████╗█████╗  ██║     ██║   ██║██████╔╝██║   ██║    ╚████╔╝ 
-               ╚════██║██╔══╝  ██║     ██║   ██║██╔══██╗██║   ██║     ╚██╔╝  
-               ███████║███████╗╚██████╗╚██████╔╝██║  ██║██║   ██║      ██║   
-               ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝   
-                        [ JULIA SECURITY PACKAGES | bad-antics ]
+╔═══════════════════════════════════════════════════════════════╗
+║  AWESOME JULIA SECURITY  ·  Curated Security Packages         ║
+╚═══════════════════════════════════════════════════════════════╝
 ```
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
@@ -30,7 +20,7 @@ JuliaCrypto, awesome list, security tools, Julia packages, bad-antics
 
 **A curated list of Julia packages for security research, cryptography, forensics, adversarial ML, and more.**
 
-*Julia combines Python-like readability with C-like performance — ideal for security tools requiring both rapid development and computational efficiency.*
+*Julia combines Python-like readability with C-like performance — ideal for security tools.*
 
 [Submit Package](https://github.com/bad-antics/awesome-julia-security/issues/new) • [Report Broken Link](https://github.com/bad-antics/awesome-julia-security/issues) • [Contribute](#contributing)
 
@@ -92,8 +82,6 @@ JuliaCrypto, awesome list, security tools, Julia packages, bad-antics
 
 ## Quantum Computing & Cryptography
 
-### Quantum Frameworks
-
 | Package | Description |
 |---------|-------------|
 | [Yao.jl](https://github.com/QuantumBFS/Yao.jl) | Extensible quantum circuits |
@@ -145,18 +133,11 @@ JuliaCrypto, awesome list, security tools, Julia packages, bad-antics
 
 ## Machine Learning Security
 
-### Adversarial ML
-
 | Package | Description |
 |---------|-------------|
 | [Flux.jl](https://github.com/FluxML/Flux.jl) | ML framework |
 | [Adversarial.jl](https://github.com/jaypmorgan/Adversarial.jl) | Adversarial attacks |
 | [Zygote.jl](https://github.com/FluxML/Zygote.jl) | Autodiff for gradients |
-
-### Privacy
-
-| Package | Description |
-|---------|-------------|
 | [DifferentialPrivacy.jl](https://github.com/OpenMined/DifferentialPrivacy.jl) | DP algorithms |
 
 ---
@@ -191,15 +172,9 @@ JuliaCrypto, awesome list, security tools, Julia packages, bad-antics
 
 ## Learning Resources
 
-### Documentation
-
 - [Julia Security Guide](https://docs.julialang.org/en/v1/manual/security/) — Official docs
 - [JuliaCrypto](https://github.com/JuliaCrypto) — Crypto organization
-
-### Communities
-
 - [Julia Discourse - Security](https://discourse.julialang.org/c/domain/security)
-- [Julia Slack #security](https://julialang.org/slack/)
 
 ---
 
@@ -208,23 +183,18 @@ JuliaCrypto, awesome list, security tools, Julia packages, bad-antics
 - [Awesome Security](https://github.com/sbilly/awesome-security)
 - [Awesome Cryptography](https://github.com/sobolevn/awesome-cryptography)
 - [Awesome Hacking](https://github.com/carpedm20/awesome-hacking)
-- [Awesome Rust Security](https://github.com/AwareSet/awesome-rust-security)
 
 ---
 
 ## Contributing
 
-Found a Julia security package we missed? [Open an issue](https://github.com/bad-antics/awesome-julia-security/issues/new) or submit a PR!
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Found a Julia security package? [Open an issue](https://github.com/bad-antics/awesome-julia-security/issues/new) or submit a PR!
 
 ---
 
 <div align="center">
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-**[GitHub](https://github.com/bad-antics)** • **[NullSec](https://github.com/bad-antics/nullsec)**
 
 *Maintained by [bad-antics](https://github.com/bad-antics)*
 
