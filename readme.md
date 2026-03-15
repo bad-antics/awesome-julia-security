@@ -114,6 +114,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 - [Krypto.jl](https://github.com/JuliaCrypto/Krypto.jl) - Experimental futuristic crypto library in Julia.
 - [ToyPublicKeys.jl](https://github.com/NegaScout/ToyPublicKeys.jl) - Toy implementation of public key cryptography for learning purposes.
 - [SecretSharing.jl](https://github.com/bad-antics/SecretSharing.jl) - Shamir's Secret Sharing scheme over GF(256) for splitting secrets into threshold-reconstructable shares.
+- [PasswordHashing.jl](https://github.com/bad-antics/PasswordHashing.jl) - Unified password hashing with bcrypt, scrypt, and Argon2id implementations in pure Julia.
 - [TOTP.jl](https://github.com/bad-antics/TOTP.jl) - RFC 4226/6238 compliant HOTP and TOTP one-time password generation and verification.
 
 ### Side-Channel Analysis
@@ -205,6 +206,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 - [DataFrames.jl](https://github.com/JuliaData/DataFrames.jl) - Tabular data analysis framework for investigating security events and forensic data.
 - [LazyJSON.jl](https://github.com/JuliaCloud/LazyJSON.jl) - Lazy JSON interface for efficiently reading large JSON data files.
 - [XMLDict.jl](https://github.com/JuliaCloud/XMLDict.jl) - XML to dictionary parser useful for processing security scan outputs and SAST reports.
+- [ASN1.jl](https://github.com/bad-antics/ASN1.jl) - ASN.1/DER/BER encoder-decoder with X.509 certificate parser for cryptographic data analysis.
 
 ### Database Security
 
@@ -260,6 +262,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 
 - [Phantom](https://github.com/bad-antics/phantom) - Zero-knowledge proof security framework for proving vulnerabilities without revealing details.
 - [Oracle](https://github.com/bad-antics/oracle) - AI-powered vulnerability discovery engine using predictive detection with ML models and 300+ patterns.
+- [Fuzz.jl](https://github.com/bad-antics/Fuzz.jl) - Security fuzzing toolkit with mutation-based, generation-based, and coverage-guided fuzzing strategies.
 
 ### Hash Analysis
 
@@ -270,6 +273,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 ### Threat Intelligence
 
 - [Vortex](https://github.com/bad-antics/vortex) - Real-time threat intelligence fusion engine for correlating IOCs across 50+ feeds with ML analysis.
+- [YARAJulia.jl](https://github.com/bad-antics/YARAJulia.jl) - YARA-like pattern matching engine for malware analysis and threat detection with hex, text, and regex patterns.
 
 ### Security Scanning
 
