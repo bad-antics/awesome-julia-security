@@ -15,6 +15,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
   - [Zero-Knowledge Proofs](#zero-knowledge-proofs)
   - [Cryptographic Signatures](#cryptographic-signatures)
   - [Cryptographic Utilities](#cryptographic-utilities)
+  - [Side-Channel Analysis](#side-channel-analysis)
 - [Network Security](#network-security)
   - [Protocol Libraries](#protocol-libraries)
   - [TLS and SSL](#tls-and-ssl)
@@ -39,6 +40,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
   - [Adversarial ML](#adversarial-ml)
 - [Privacy and Anonymity](#privacy-and-anonymity)
   - [Differential Privacy](#differential-privacy)
+  - [Steganography](#steganography)
   - [Secure Voting](#secure-voting)
 - [Security Frameworks and Tools](#security-frameworks-and-tools)
   - [Vulnerability Research](#vulnerability-research)
@@ -111,6 +113,12 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 - [CryptoPRG.jl](https://github.com/PeaceFounder/CryptoPRG.jl) - Deterministic pseudorandom generators for cryptographic applications.
 - [Krypto.jl](https://github.com/JuliaCrypto/Krypto.jl) - Experimental futuristic crypto library in Julia.
 - [ToyPublicKeys.jl](https://github.com/NegaScout/ToyPublicKeys.jl) - Toy implementation of public key cryptography for learning purposes.
+- [SecretSharing.jl](https://github.com/bad-antics/SecretSharing.jl) - Shamir's Secret Sharing scheme over GF(256) for splitting secrets into threshold-reconstructable shares.
+- [TOTP.jl](https://github.com/bad-antics/TOTP.jl) - RFC 4226/6238 compliant HOTP and TOTP one-time password generation and verification.
+
+### Side-Channel Analysis
+
+- [Jlsca](https://github.com/Riscure/Jlsca) - Side-channel analysis toolkit for differential power analysis (DPA), correlation power analysis (CPA), and related attacks.
 
 ## Network Security
 
@@ -121,6 +129,8 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 - [WebSockets.jl](https://github.com/JuliaWeb/WebSockets.jl) - WebSockets library for Julia, useful for real-time security monitoring dashboards.
 - [Sockets.jl](https://docs.julialang.org/en/v1/stdlib/Sockets/) - Standard library for low-level networking and socket programming.
 - [ZMQ.jl](https://github.com/JuliaInterop/ZMQ.jl) - Julia interface to ZeroMQ for distributed messaging patterns.
+- [Pcap.jl](https://github.com/JuliaIO/Pcap.jl) - libpcap bindings for Julia with packet capture and analysis capabilities.
+- [LDAPClient.jl](https://github.com/felipenoris/LDAPClient.jl) - LDAP client for Julia providing directory services integration for authentication and authorization.
 
 ### TLS and SSL
 
@@ -156,6 +166,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 
 - [JWTs.jl](https://github.com/JuliaWeb/JWTs.jl) - JSON Web Tokens (JWT) implementation for Julia supporting token creation, validation, and verification.
 - [GitHub.jl](https://github.com/JuliaWeb/GitHub.jl) - Julia interface for the GitHub API with OAuth authentication support.
+- [OAuthClient.jl](https://github.com/bad-antics/OAuthClient.jl) - OAuth 2.0 client library supporting Authorization Code with PKCE, Client Credentials, Device Code, and Refresh Token flows.
 
 ### Content Security
 
@@ -201,7 +212,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 
 ### Log Analysis
 
-- [SPECTRA](https://github.com/bad-antics/spectra) - Security Protocol Engine for Cyber Threat Response and Analysis with hash analysis, port scanning, pattern detection, and forensics.
+- [SpectraSec](https://github.com/bad-antics/spectra) - Security Protocol Engine for Cyber Threat Response and Analysis with hash identification, entropy analysis, port scanning, pattern detection, and threat scoring.
 
 ## Machine Learning for Security
 
@@ -231,6 +242,10 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 
 - [DiffPrivacyInference.jl](https://github.com/DiffMu/DiffPrivacyInference.jl) - Automatically infer differential privacy properties of Julia source code through static analysis.
 - [DiffPrivacy.jl](https://github.com/r0cketr1kky/DiffPrivacy.jl) - Library implementing differential privacy techniques over statistical databases.
+
+### Steganography
+
+- [Steganography.jl](https://github.com/bad-antics/Steganography.jl) - LSB image steganography for hiding and extracting secret data in images with configurable bit depth and Netpbm support.
 
 ### Secure Voting
 
