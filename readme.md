@@ -20,7 +20,6 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
   - [TLS and SSL](#tls-and-ssl)
   - [SSH](#ssh)
   - [Network Reconnaissance](#network-reconnaissance)
-  - [Packet Analysis](#packet-analysis)
   - [GeoIP and DNS](#geoip-and-dns)
 - [Web Security](#web-security)
   - [HTTP and Web Frameworks](#http-and-web-frameworks)
