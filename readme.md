@@ -15,6 +15,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
   - [Zero-Knowledge Proofs](#zero-knowledge-proofs)
   - [Cryptographic Signatures](#cryptographic-signatures)
   - [Cryptographic Utilities](#cryptographic-utilities)
+  - [Cryptanalysis](#cryptanalysis)
   - [Side-Channel Analysis](#side-channel-analysis)
 - [Network Security](#network-security)
   - [Protocol Libraries](#protocol-libraries)
@@ -120,6 +121,10 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 ### Side-Channel Analysis
 
 - [Jlsca](https://github.com/Riscure/Jlsca) - Side-channel analysis toolkit for differential power analysis (DPA), correlation power analysis (CPA), and related attacks.
+
+### Cryptanalysis
+
+- [CryptoAnalysis.jl](https://github.com/bad-antics/CryptoAnalysis.jl) - Classical cryptanalysis and cipher-breaking toolkit with frequency analysis, IoC, Kasiski examination, Caesar/Vigenère/XOR breaking, entropy, and chi-squared testing.
 
 ## Network Security
 
