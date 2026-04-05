@@ -38,6 +38,7 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 - [Machine Learning for Security](#machine-learning-for-security)
   - [ML Frameworks](#ml-frameworks)
   - [Anomaly and Outlier Detection](#anomaly-and-outlier-detection)
+  - [Neuromorphic AI](#neuromorphic-ai)
   - [Adversarial ML](#adversarial-ml)
 - [Privacy and Anonymity](#privacy-and-anonymity)
   - [Differential Privacy](#differential-privacy)
@@ -238,6 +239,10 @@ Julia's high-performance computing capabilities, native parallelism, and scienti
 - [OutlierDetectionNeighbors.jl](https://github.com/OutlierDetectionJL/OutlierDetectionNeighbors.jl) - Neighbor-based outlier detection algorithms including KNN and LOF.
 - [HalfSpaceTrees.jl](https://github.com/e-k-m/HalfSpaceTrees.jl) - Half-space trees for streaming anomaly detection.
 - [LinRegOutliers](https://github.com/jbytecode/LinRegOutliers) - Direct and robust methods for outlier detection in linear regression.
+
+### Neuromorphic AI
+
+- [GrugBot420](https://github.com/bad-antics/grugbot420) - Neuromorphic cognitive engine deploying domain-expert AI specimens via competing pattern node populations, coinflip decay, and architectural configuration instead of training.
 
 ### Adversarial ML
 
